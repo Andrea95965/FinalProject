@@ -13,5 +13,8 @@ var preload ={
         this.game.load.image('taco','taco.png');
         this.game.load.image('sushi','sushi.png');
         this.game.load.image('pancake','pancake.png');
+        this.game.load.image('gameover','gameoverRed.png');
+        this.game.load.image('loading','loading.png');
+        this.game.load.image('start','startButton.png');
     }
 }
