@@ -13,5 +13,4 @@ var preload ={
         this.game.load.image('sushi','sushi.png');
         this.game.load.image('pancake','pancake.png');
     }
-    
 }
