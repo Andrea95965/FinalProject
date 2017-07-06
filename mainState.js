@@ -1,4 +1,33 @@
+var mainState = {
 
+    
+    create: function(){
+        
+        this.cursor = this.game.input.keyboard.createCursorKeys();
+        
+        this.game.stage.backgroundColor = '#87CEEB';   
+        
+        this.game.physics.startSystem(Phaser.Physics.ARCADE);
+    
+        this.game.world.enableBody = true;
+        
+        this.player = this.game.add.sprite(70, 100, 'player');
+    
+        this.player.body.gravity.y = 600;
+        
+
+        this.walls = this.game.add.group();
+        this.foods =this.game.add.group();
+        this.lavas = this.game.add.group();
+        
+        var level = [
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        '!                                  o  o             x',
+        '!                    o   o      o xxxxx        o    x',
+        '!             o     xxxxxxx     x            xxxxx  x',
+        '!    o  o  o  !  o     o                      o o   x',
+        '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    
         for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
 
@@ -63,37 +92,5 @@
         this.game.state.start("GameOver");
         
     }
-    
-
-var mainState = {
-
-    
-    create: function(){
-        
-        this.cursor = this.game.input.keyboard.createCursorKeys();
-        
-        this.game.stage.backgroundColor = '#87CEEB';   
-        
-        this.game.physics.startSystem(Phaser.Physics.ARCADE);
-    
-        this.game.world.enableBody = true;
-        
-        this.player = this.game.add.sprite(70, 100, 'player');
-    
-        this.player.body.gravity.y = 600;
-        
-
-        this.walls = this.game.add.group();
-        this.foods =this.game.add.group();
-        this.lavas = this.game.add.group();
-        
-        var level = [
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        '!                                  o  o             x',
-        '!                    o   o      o xxxxx        o    x',
-        '!             o     xxxxxxx     x            xxxxx  x',
-        '!    o  o  o  !  o     o                      o o   x',
-        '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    
 
 
