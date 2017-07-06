@@ -8,7 +8,6 @@
 <script src = "gameover.js"></script>
 </head>
 <body>  
-<!--   header tags go here-->
 <header>
 </header>
 <script>
@@ -19,7 +18,8 @@
           game.state.add("Preload",preload);
           game.state.add("GameTitle",gameTitle);
           game.state.add("GameOver",gameOver);
-          game.state.start("Boot");
+            game.state.add("characterSelection",playGame);
+          game.state.start("characterSelection");
       })();  
         
     </script>

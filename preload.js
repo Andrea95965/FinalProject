@@ -2,9 +2,12 @@ var preload ={
     
     preload: function(){
         
+
         this.game.load.image('player1','redDino.png');
         this.game.load.image('player2','fatDino.png');
         this.game.load.image('player3','spikyDino.png');
+
+        this.game.load.image('fatDino','fatDino.png');
         this.game.load.image('donut','donut.png');
         this.game.load.image('steak','steak.png');
         this.game.load.image('pizza','pizza.png');
