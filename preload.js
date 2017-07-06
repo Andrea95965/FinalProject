@@ -20,5 +20,10 @@ var preload ={
         this.game.load.image('start','startButton.png');
         this.game.load.image('wall','grass.png');
         this.game.load.image('gameTitle','gameTitle.png');
+    },
+    
+    create :function (){
+    
+    this.game.state.start("gameTitle");
     }
-}
+};
