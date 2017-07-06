@@ -82,13 +82,18 @@ var mainState = {
     
         this.player.body.gravity.y = 600;
         
-<<<<<<< HEAD
+
         this.walls = this.game.add.group();
         this.foods =this.game.add.group();
         this.lavas = this.game.add.group();
-=======
-    }
-}
+        
+        var level = [
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        '!                                  o  o             x',
+        '!                    o   o      o xxxxx        o    x',
+        '!             o     xxxxxxx     x            xxxxx  x',
+        '!    o  o  o  !  o     o                      o o   x',
+        '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
     
 
->>>>>>> f63b2f6958141abfd95b61830425a61205a45ee2
+
