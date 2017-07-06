@@ -1,7 +1,7 @@
 var game;
 var speedMult = 0.7;
 var friction = 0.99;
- 
+
  
 window.onload = function() {	
 	game = new Phaser.Game(1420, 500, Phaser.AUTO, "");
@@ -15,6 +15,7 @@ playGame.prototype = {
           game.load.image("dino", "fatDino.png");
           game.load.image("dino", "spikyDino.png");
           game.load.image("dino", "redDino.png");
+         //need to add transp.png
           game.load.image("transp", "transp.png");
      },
      create: function(){  
