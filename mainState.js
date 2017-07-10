@@ -13,7 +13,7 @@ var mainState = {
         
         this.player = this.game.add.sprite(70, 100, 'player');
         
-        this.meteor = this.game.add.sprite(0,100, 'meteor')
+        this.meteor = this.game.add.sprite(0,100, 'meteor');
     
         this.player.body.gravity.y = 600;
         
@@ -66,7 +66,7 @@ var mainState = {
            this.player.body.velocity.x = -200;
            }
     else if(this.cursor.right.isDown){
-        this.player.body.velocity.x = 200
+        this.player.body.velocity.x = 200;
     }
       else{
           this.player.body.velocity.x = 0;
