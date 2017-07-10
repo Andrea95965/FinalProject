@@ -27,7 +27,7 @@ var mainState = {
         '!             o     xxxxxxx     x            xxxxx  x',
         '!    o  o  o  !  o     o                      o o   x',
         '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    
+    ];
         for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
 
@@ -46,7 +46,7 @@ var mainState = {
                 }
 
 
-                else if (level[i][j] == '!') {
+                else if(level[i][j] == '!') {
                     var enemy = this.game.add.sprite(30+20*j, 30+20*i, 'lava');
                     this.lavas.add(enemy);
                 }
@@ -56,9 +56,9 @@ var mainState = {
 
     }, 
     update: function(){
-    this.physics.arcade.collide(this.walls, this.player);
-    this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
-    this.physics.arcade.overlap(this.lavas, this.player, this.restart, null, this);
+    this.game.physics.arcade.collide(this.walls, this.player);
+    this.game.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
+    this.game.physics.arcade.overlap(this.lavas, this.player, this.restart, null, this);
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
@@ -93,3 +93,4 @@ if takeFood: function(player,food){
     }
 
 
+};

@@ -17,7 +17,6 @@ var preload ={
     },
     
     create :function (){
-    
     this.game.state.start("gameTitle");
     }
 };
