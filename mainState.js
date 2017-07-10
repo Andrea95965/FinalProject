@@ -12,6 +12,8 @@ var mainState = {
         this.game.world.enableBody = true;
         
         this.player = this.game.add.sprite(70, 100, 'player');
+        
+        this.meteor = this.game.add.sprite(0,100, 'meteor')
     
         this.player.body.gravity.y = 600;
         
