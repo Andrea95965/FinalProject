@@ -6,7 +6,7 @@ var gameTitle = {
         startButton.anchor.setTo(0.5,0.5);
     },
     
-    startTheGame: function(){
+    playTheGame: function(){
         this.game.state.start('state1');
     }
 };

@@ -19,7 +19,7 @@ var mainState = {
         
 
         this.walls = this.game.add.group();
-        this.foods =this.game.add.group();
+        this.foods = this.game.add.group();
         this.lavas = this.game.add.group();
         
         var level = [
@@ -84,7 +84,7 @@ var mainState = {
         
         
     },
-if takeFood: function(player,food){
+takeFood: function(player,food){
         food.kill();
         
 },
