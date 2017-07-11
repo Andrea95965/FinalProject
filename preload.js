@@ -1,6 +1,9 @@
 var preload ={
     
     preload: function(){
+        var loadingBar = this.add.sprite(160,240,"loading");
+        loadingBar.anchor.setTo(0.5,0.5);
+        this.load.setPreloadSprite(loadingBar);
         
         this.game.load.image('fatDino','fatDino.png');
         this.game.load.image('food','cake.png')
