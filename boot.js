@@ -4,7 +4,7 @@ var boot = {
     },
     
     create: function(){
-       this.game.state.start("preload");
+       this.game.state.start("Preload");
     }
     
 };
