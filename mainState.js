@@ -13,12 +13,11 @@ var mainState = {
         
         this.player = this.game.add.sprite(70, 100, 'fatDino');
         
-        this.meteor = this.game.add.sprite(0, 100, 'meteor');
+        this.meteor = this.game.add.sprite(100, 100, 'meteor');
     
         this.player.body.gravity.y = 600;
         
-        this.meteor.body.gravity.y = 800;
-        
+        this.meteor.body.gravity.y = 9000;
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
