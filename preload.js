@@ -6,7 +6,7 @@ var preload ={
         this.load.setPreloadSprite(loadingBar);
         
         this.game.load.image('fatDino','fatDino.png');
-        this.game.load.image('food','cake.png')
+        this.game.load.image('food','cake.png');
         this.game.load.image('gameover','gameoverRed.png');
         this.game.load.image('loading','loading.png');
         this.game.load.image('start','startbutton2.png');
@@ -16,7 +16,7 @@ var preload ={
         this.game.load.image('lava','lava.png');
     },
     
-    create :function (){
+    create: function(){
     this.game.state.start("gameTitle");
     }
 };
