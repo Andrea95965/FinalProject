@@ -45,7 +45,7 @@ var mainState = {
 
                 else if (level[i][j] == 'o') {
                     var food = this.game.add.sprite(30+20*j, 30+20*i, 'food');
-                    this.foods.add(food);
+                    this.food.add(food);
                      
                 }
 
