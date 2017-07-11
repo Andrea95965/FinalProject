@@ -1,7 +1,7 @@
 var mainState = {
 
     
-    create: function(){
+    create: function() {
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
@@ -16,6 +16,8 @@ var mainState = {
         this.meteor = this.game.add.sprite(0,100, 'meteor');
     
         this.player.body.gravity.y = 600;
+        
+        this.meteor.body.gravity.y = 800
         
 
         this.walls = this.game.add.group();
