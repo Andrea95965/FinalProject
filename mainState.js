@@ -17,7 +17,7 @@ var mainState = {
     
         this.player.body.gravity.y = 600;
         
-        this.meteor.body.gravity.y = 800
+        this.meteor.body.gravity.y = 800;
         
 
         this.walls = this.game.add.group();
@@ -38,14 +38,14 @@ var mainState = {
 
                 if (level[i][j] == 'x') {
                     var wall = this.game.add.sprite(30+20*j, 30+20*i, 'wall');
-                    this.wall.add(wall);
+                    this.walls.add(wall);
                     wall.body.immovable = true; 
                 }
 
 
                 else if (level[i][j] == 'o') {
                     var food = this.game.add.sprite(30+20*j, 30+20*i, 'food');
-                    this.food.add(food);
+                    this.foods.add(food);
                      
                 }
 
