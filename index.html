@@ -12,12 +12,12 @@
       (function(){
       var game = new Phaser.Game(1420, 700, Phaser.AUTO, "game");
          
-          game.state.add("Boot",boot);
-          game.state.add("Preload",preload);
-          game.state.add("GameTitle",gameTitle);
+          game.state.add("boot",boot);
+          game.state.add("preload",preload);
+          game.state.add("gameTitle",gameTitle);
           game.state.add("state1",mainState);
-          game.state.add("GameOver",gameOver);
-          game.state.start("Boot");
+          game.state.add("gameOver",gameOver);
+          game.state.start("boot");
       })();  
         
     </script>
