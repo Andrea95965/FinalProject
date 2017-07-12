@@ -17,7 +17,23 @@ var mainState = {
     
         this.player.body.gravity.y = 600;
         
-        this.meteor.body.gravity.y = 8000;
+        this.meteor.body.gravity.y = 100;
+        
+         var delay = 0;
+
+    for (var i = 0; i < 40; i++)
+    {
+        var sprite = this.game.add.sprite(-100 + (this.game.world.randomX), -100, 'meteor');
+
+        sprite.scale.set(this.game.rnd.realInRange(0.1, 0.6));
+
+        var speed = this.game.rnd.between(4000, 6000);
+
+        this.game.add.tween(sprite).to({ y: 700 }, speed, Phaser.Easing.Sinusoidal.InOut, true, delay, 1000, false);
+
+        delay += 200;
+    }
+
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
@@ -29,7 +45,7 @@ var mainState = {
         '                     o   o      o xxxxx        o    !',
         '              o     xxxxxxx     x            xxxxx  !',
         '    o  o  o    o     o                      o o     !',
-        '            x                                       !',
+        '                                                    !',
         ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx       !',   
         '                                                    !',   
         '                                                    !',   
@@ -82,6 +98,7 @@ var mainState = {
     this.physics.arcade.collide(this.walls, this.player);
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
     this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
+    
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
