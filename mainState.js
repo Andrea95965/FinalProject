@@ -17,7 +17,7 @@ var mainState = {
     
         this.player.body.gravity.y = 600;
         
-        this.meteor.body.gravity.y = 8000;
+        this.meteor.body.gravity.y = 100;
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
