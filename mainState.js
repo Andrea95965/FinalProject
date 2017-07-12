@@ -11,7 +11,7 @@ var mainState = {
     
         this.game.world.enableBody = true;
         
-        this.player = this.game.add.sprite (200, 100, 'fatDino');
+        this.player = this.game.add.sprite (150, 100, 'fatDino');
         
         this.meteor = this.game.add.sprite(100, 100, 'meteor');
     
