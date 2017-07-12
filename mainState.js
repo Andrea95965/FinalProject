@@ -18,10 +18,7 @@ var mainState = {
         this.player.body.gravity.y = 600;
         
         this.meteor.body.gravity.y = 100;
-<<<<<<< HEAD
 
-=======
->>>>>>> 100c51f6c7f9cd7a4399647b0aa27941dc9dbfb2
         
          var delay = 0;
 
@@ -39,10 +36,7 @@ var mainState = {
     }
 
 
-<<<<<<< HEAD
-=======
- 
->>>>>>> 100c51f6c7f9cd7a4399647b0aa27941dc9dbfb2
+
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
@@ -53,7 +47,7 @@ var mainState = {
         '                                   o  o                              ',
         '                     o   o      o xxxxx        o                     ',
         '              o     xxxxxxx     x            xxxxx                   ',
-        '    o  o  o    o     o                      o o                      ',
+        '    o  o  o                                                          ',
         '                                                                     ',
         ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
         '                                                                     ',   
