@@ -44,9 +44,9 @@ var mainState = {
         
         var level = [
         '                                                                     ',
-        '                                   o  o                              ',
-        '                     o   o      o xxxxx        o                     ',
-        '              o     xxxxxxx     x            xxxxx                   ',
+        '                                   o  o               o              ',
+        '                     o   o      o xxxxx                              ',
+        '              o     xxxxxxx     x                   xxxxx            ',
         '    o  o  o                                                          ',
         '                                                                     ',
         ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
