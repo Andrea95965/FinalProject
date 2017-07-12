@@ -5,7 +5,7 @@ var mainState = {
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
-        this.game.stage.backgroundColor = '#87CEEB';   
+        this.game.stage.backgroundColor ='#87CEEB';   
         
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
     
@@ -51,8 +51,8 @@ var mainState = {
         ' o            o             xxxxxxxxxxxxxxxxxxxxxxx  ',    
         '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
     ];
-        for (var i = 0; i < level.length; i++) 
-            {for (var j = 0; j < level[i].length; j++) {
+        for (var i = 0; i < level.length; i++) {
+            for (var j = 0; j < level[i].length; j++) {
 
 
                 if (level[i][j] == 'x') {
