@@ -105,9 +105,11 @@ var mainState = {
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
-           }
+            this.player.scale.setTo(-1,1);   
+        }
     else if(this.cursor.right.isDown){
         this.player.body.velocity.x = 200;
+        this.player.scale.setTo(1,1);
     }
       else{
           this.player.body.velocity.x = 0;
