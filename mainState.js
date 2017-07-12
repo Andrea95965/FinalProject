@@ -11,14 +11,13 @@ var mainState = {
     
         this.game.world.enableBody = true;
         
-        this.player = this.game.add.sprite(70, 100, 'fatDino');
+        this.player = this.game.add.sprite (200, 100, 'fatDino');
         
-        this.meteor = this.game.add.sprite(0, 100, 'meteor');
+        this.meteor = this.game.add.sprite(100, 100, 'meteor');
     
         this.player.body.gravity.y = 600;
         
-        this.meteor.body.gravity.y = 800;
-        
+        this.meteor.body.gravity.y = 9000;
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
@@ -26,10 +25,30 @@ var mainState = {
         
         var level = [
         'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        '!                                  o  o             x',
-        '!                    o   o      o xxxxx        o    x',
-        '!             o     xxxxxxx     x            xxxxx  x',
-        '!    o  o  o  !  o     o                      o o   x',
+        '                                   o  o             !',
+        '                     o   o      o xxxxx        o    !',
+        '              o     xxxxxxx     x            xxxxx  !',
+        '    o  o  o    o     o                      o o     !',
+        '            x                                       !',
+        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx       !',   
+        '                                                    !',   
+        '                                                    !',   
+        'xxxxxxxxx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   o  !!!!!!!!!',  
+        '                                                     ',   
+        '                    o              o                 ',
+        '                  o   o        xxxxxxxxx     o       ',
+        '                o       o                            ',
+        '              o           o                          ',
+        'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx    ',
+        '                                                     ',   
+        '  xxx         xxx     o                              ',
+        '      !!!!!!!               o                        ',
+        '              !!!!!!       xxx                       ',   
+        '              !!!!!!   o               o             ',   
+        '                     xxxxx          o xxxx           ',   
+        '        o               o       o xxxxxxxxxxx        ',   
+        '                     xxxxx   o xxxxxxxxxxxxxxxxx     ',   
+        ' o            o             xxxxxxxxxxxxxxxxxxxxxxx  ',    
         '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
     ];
         for (var i = 0; i < level.length; i++) {
@@ -62,7 +81,7 @@ var mainState = {
     update: function(){
     this.physics.arcade.collide(this.walls, this.player);
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
-    this.physics.arcade.overlap(this.lavas, this.player, this.restart, null, this);
+    this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
@@ -92,7 +111,7 @@ takeFood: function(player,food){
 },
     
     restart: function(){
-        this.game.state.start('gameover');
+        this.game.state.start('gameOver');
         
     }
 
