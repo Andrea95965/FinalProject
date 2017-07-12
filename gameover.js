@@ -1,7 +1,7 @@
 var gameOver = {
     
     create:function(){
-        var gameOverTitle=this.game.add.sprite(1420,700,"gameover");
+        var gameOverTitle=this.game.add.sprite(710,350,"gameover");
        gameOverTitle.anchor.setTo(0.5,0.5);
         var startButton = this.game.add.button(250,160,"start",this.playTheGame,this);
         startButton.anchor.setTo(0.5,0.5);
