@@ -18,7 +18,6 @@ var mainState = {
         this.player.body.gravity.y = 600;
         
         this.meteor.body.gravity.y = 100;
-<<<<<<< HEAD
         
          var delay = 0;
 
@@ -35,8 +34,8 @@ var mainState = {
         delay += 200;
     }
 
-=======
->>>>>>> c1d27c3b4180d743341ff2add7977ea9e7c959d7
+
+ 
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
