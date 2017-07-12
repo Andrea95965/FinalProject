@@ -6,7 +6,7 @@ var preload ={
         loadingBar.anchor.setTo(0.5,0.5);
         this.load.setPreloadSprite(loadingBar);
         
-        this.game.load.image('fatDino','newDino.png');
+        this.game.load.image('fatDino','newDino1.png');
         this.game.load.image('food','cake.png');
 //        this.game.load.image('gameover','gameoverRed.png');
         this.game.load.image('start','startbutton2.png');
