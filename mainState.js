@@ -11,7 +11,7 @@ var mainState = {
     
         this.game.world.enableBody = true;
         
-        this.player = this.game.add.sprite(70, 100, 'fatDino');
+        this.player = this.game.add.sprite (200, 100, 'fatDino');
         
         this.meteor = this.game.add.sprite(100, 100, 'meteor');
     
@@ -25,15 +25,15 @@ var mainState = {
         
         var level = [
         'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        '!                                  o  o             !',
-        '!                    o   o      o xxxxx        o    !',
-        '!             o     xxxxxxx     x            xxxxx  !',
-        '!    o  o  o  !  o     o                      o o   !',
-        '!           x !      !!!!!                          !',
-        '!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx       !',   
-        '!                                                   !',   
-        '!                                                   !',   
-        '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   o  !!!!!!!!!',  
+        '                                   o  o             !',
+        '                     o   o      o xxxxx        o    !',
+        '              o     xxxxxxx     x            xxxxx  !',
+        '    o  o  o    o     o                      o o     !',
+        '            x                                       !',
+        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx       !',   
+        '                                                    !',   
+        '                                                    !',   
+        'xxxxxxxxx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   o  !!!!!!!!!',  
         '                                                     ',   
         '                    o              o                 ',
         '                  o   o        xxxxxxxxx     o       ',
@@ -81,7 +81,7 @@ var mainState = {
     update: function(){
     this.physics.arcade.collide(this.walls, this.player);
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
-    this.physics.arcade.overlap(this.lavas, this.player, this.restart, null, this);
+    this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
@@ -111,7 +111,7 @@ takeFood: function(player,food){
 },
     
     restart: function(){
-        this.game.state.start('gameover');
+        this.game.state.start('gameOver');
         
     }
 
