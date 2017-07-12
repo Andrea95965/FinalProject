@@ -13,11 +13,12 @@ var mainState = {
         
         this.player = this.game.add.sprite (150, 100, 'fatDino');
         
-        this.meteor = this.game.add.sprite(100, 100, 'meteor');
+        this.meteor = this.game.add.sprite(400, 100, 'meteor');
     
         this.player.body.gravity.y = 600;
         
         this.meteor.body.gravity.y = 100;
+
         
          var delay = 0;
 
@@ -35,39 +36,39 @@ var mainState = {
     }
 
 
- 
+
 
         this.walls = this.game.add.group();
         this.foods = this.game.add.group();
         this.lavas = this.game.add.group();
         
         var level = [
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-        '                                   o  o             !',
-        '                     o   o      o xxxxx        o    !',
-        '              o     xxxxxxx     x            xxxxx  !',
-        '    o  o  o    o     o                      o o     !',
-        '                                                    !',
-        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx       !',   
-        '                                                    !',   
-        '                                                    !',   
-        'xxxxxxxxx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   o  !!!!!!!!!',  
-        '                                                     ',   
-        '                    o              o                 ',
-        '                  o   o        xxxxxxxxx     o       ',
-        '                o       o                            ',
-        '              o           o                          ',
-        'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx    ',
-        '                                                     ',   
-        '  xxx         xxx     o                              ',
-        '      !!!!!!!               o                        ',
-        '              !!!!!!       xxx                       ',   
-        '              !!!!!!   o               o             ',   
-        '                     xxxxx          o xxxx           ',   
-        '        o               o       o xxxxxxxxxxx        ',   
-        '                     xxxxx   o xxxxxxxxxxxxxxxxx     ',   
-        ' o            o             xxxxxxxxxxxxxxxxxxxxxxx  ',    
-        '!xxxxxxxxxxxxxxxxxxx!!!!!!xxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        '                                                                     ',
+        '                                   o  o                              ',
+        '                     o   o      o xxxxx        o                     ',
+        '              o     xxxxxxx     x            xxxxx                   ',
+        '    o  o  o                                                          ',
+        '                                                                     ',
+        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
+        '                                                                     ',   
+        '                                                                     ',   
+        '                                                                     ',  
+        'xxxxxxxxx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   o  !!!!!!!!!                ',         
+        '                    o              o                                 ',
+        '                  o   o        xxxxxxxxx     o                       ',
+        '                o       o                                            ',
+        '              o           o                                          ',
+        'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                    ',
+        '                                                                     ',   
+        '                                                                     ',
+        '     xxxxxx   o                                        ',
+        '              !!!!!!       xxx                                       ',   
+        '              !!!!!!   o               o                             ',   
+        '                     xxxxx          o xxxx                           ',   
+        '        o               o       o xxxxxxxxxxx                        ',   
+        '                     xxxxx   o xxxxxxxxxxxxxxxxx                     ',   
+        ' o            o             xxxxxxxxxxxxxxxxxxxxxxx                  ',    
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     ];
         for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
@@ -100,7 +101,7 @@ var mainState = {
     this.physics.arcade.collide(this.walls, this.player);
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
     this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
-    
+    this.physics.arcade.overlap(this.player,this.meteor, this.restart, null, this);
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
