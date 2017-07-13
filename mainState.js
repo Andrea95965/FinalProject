@@ -166,7 +166,35 @@ var mainState = {
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
     this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball, this.restart, null, this);
-    
+    this.physics.arcade.overlap(this.player,this.fireball2, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball3, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball4, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball5, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball6, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball7, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball8, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball9, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball10, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball11, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball12, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball13, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball14, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball15, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball16, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball17, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball18, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball19, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball20, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball21, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball22, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball23, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball24, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball25, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball26,this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball27, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball28, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball29, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball30, this.restart, null, this);
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
             this.player.scale.setTo(-1,1);   
