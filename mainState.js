@@ -142,12 +142,12 @@ var mainState = {
         '!xxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                   !',
         '!                                                                   !',   
         '!      x                                            xxxx            !',
-        '!      x  o                                                 o       !',
+        '!         o                                                 o       !',
         '!      xxxxxx                                             xxxxxx    !',   
         '!               xxx    o               o                            !',   
         '!                     xxxxx         o xxxx                          !',   
-        '!       o               o       o xxxxxxxxxxx                       !',   
-        '!                            o xxxxxxxxxxxxxxxxx                    !',   
+        '!       o               o       o xxxxxxxxxxx               o       !',   
+        '!                            o xxxxxxxxxxxxxxxxx            x       !',   
         '!             o             xxxxxxxxxxxxxxxxxxxxxxx                 !',    
         'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!!!!!!!!!!xxx',
         
@@ -182,7 +182,7 @@ var mainState = {
     this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '20px', fill:'#000'});
     this.text.addColor("#000000",0);
         
-        this.total = 35;
+        this.total = 40;
     this.timer = this.game.time.create(false);
             this.timerText = this.game.add.text(1320,10,"Time:"+ this.total,{ fontSize: '20px', fill:'#000'});
     this.timer.loop(1000, this.updateCounter, this);
