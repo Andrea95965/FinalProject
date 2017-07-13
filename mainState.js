@@ -17,7 +17,7 @@ var mainState = {
         this.fireball2 = this.game.add.sprite(400,0,'fireball');
         this.fireball3 = this.game.add.sprite(600,0,'fireball');
         this.fireball4 = this.game.add.sprite (800,0,'fireball');
-        this.fireball5 this.game.add.sprite (1000,0,'fireball');
+        this.fireball5 = this.game.add.sprite (1000,0,'fireball');
     
         this.player.body.gravity.y = 600;
         
@@ -124,7 +124,7 @@ var mainState = {
       } 
   
         if(this.cursor.up.isDown && this.player.body.touching.down){
-           this.player.body.velocity.y =  -100;
+           this.player.body.velocity.y =  -275;
             
         }
         
