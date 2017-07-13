@@ -6,6 +6,7 @@
 <script src = "gametitle.js"></script>
 <script src = "mainState.js"></script>
 <script src = "gameover.js"></script>
+<script src = "DINOMITE.js"></script>
 </head>
 <body>  
 
@@ -21,6 +22,7 @@
           game.state.add("state1",mainState);
           game.state.add("gameOver",gameOver);
           game.state.start("boot");
+          game.state.start("dinoMite",dinoMite);
       })();  
         
     </script>
