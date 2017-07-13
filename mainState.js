@@ -13,11 +13,11 @@ var mainState = {
         
         this.player = this.game.add.sprite (150, 100, 'fatDino');
         
-        this.meteor = this.game.add.sprite(400, 100, 'fireball');
+        this.fireball = this.game.add.sprite(400, 100, 'coolFireball');
     
         this.player.body.gravity.y = 600;
         
-        this.meteor.body.gravity.y = 100;
+        this.fireball.body.gravity.y = 100;
 
         
          var delay = 0;
