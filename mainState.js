@@ -129,7 +129,7 @@ var mainState = {
         }
     this.score = 0;
     this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '20px', fill:'#000'});
-    this.text.addColor("#ff0000",0);
+    this.text.addColor("#000000",0);
 
     }, 
     update: function(){
