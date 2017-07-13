@@ -50,33 +50,36 @@ var mainState = {
         this.lavas = this.game.add.group();
         
         var level = [
-        '                                                                     ',
-        '                                   o  o               o              ',
-        '                     o   o         xxxxx                             ',
-        '              o     xxxxxxx                          xxxxx           ',
-        '    o  o  o                                                          ',
-        '                                                                     ',
-        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                      ',   
-        '                                                                     ',   
-        '                                                           xxxxx     ',   
-        '                                                                     ',  
-        '                                                                     ',         
-        '                                                                     ',
-        '                                                                     ',
-        '                                                     xxxxx           ',
-        '                                                                     ',
-        'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                    ',
-        '                                                                     ',   
-        '                                                                     ',
-        '         o                                                  o        ',
-        '       xxxxxx                                             xxxxxx     ',   
-        '                       o               o                             ',   
-        '                      xxxxx         o xxxx                           ',   
-        '        o               o       o xxxxxxxxxxx                        ',   
-        '                             o xxxxxxxxxxxxxxxxx                     ',   
-        ' o            o             xxxxxxxxxxxxxxxxxxxxxxx                  ',    
+        '!                                                                   !',
+        '!                                  o  o               o             !',
+        '!                    o   o         xxxxx                            !',
+        '!             o     xxxxxxx                          xxxxx          !',
+        '!   o  o  o                                                         !',
+        '!                                                                   !',
+        '!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                     !',   
+        '!                                                                   !',   
+        '!                                                          xxxxx    !',   
+        '!                                                                   !',  
+        '!                                                                   !',         
+        '!                                                                   !',
+        '!                                                                   !',
+        '!                                xxx                 xxxxx          !',
+        '!                                                                   !',
+        '!xxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                   !',
+        '!                                                                   !',   
+        '!                                                                   !',
+        '!        o                                                  o       !',
+        '!      xxxxxx                                             xxxxxx    !',   
+        '!                x     o               o                            !',   
+        '!                     xxxxx         o xxxx                          !',   
+        '!       o               o       o xxxxxxxxxxx                       !',   
+        '!                            o xxxxxxxxxxxxxxxxx                    !',   
+        '!             o             xxxxxxxxxxxxxxxxxxxxxxx                 !',    
         'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!!!!!!!!!!xxx',
-    ];
+        
+        
+        
+        ];
         for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
 
