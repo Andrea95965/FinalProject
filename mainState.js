@@ -116,7 +116,7 @@ var mainState = {
           
       } 
   
-        if(this.cursor.up.isDown && this.player.body.touching.down){
+        if(this.cursor.up.isDown){
            this.player.body.velocity.y =  -300;
             
         }
