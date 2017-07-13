@@ -2,6 +2,8 @@ var mainState = {
 
     
     create: function() {
+        this.score = 0;
+        var text = this.game.add.text(10,10,"Score:"+ this.score);
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
@@ -138,6 +140,7 @@ var mainState = {
     },
 takeFood: function(player,food){
         food.kill();
+    this.score += 10;
         
 },
     
