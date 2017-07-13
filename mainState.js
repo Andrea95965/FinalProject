@@ -13,7 +13,7 @@ var mainState = {
         
         this.player = this.game.add.sprite (150, 100, 'fatDino');
         
-        this.meteor = this.game.add.sprite(100, 100, 'meteor');
+        this.meteor = this.game.add.sprite(400, 100, 'fireball');
     
         this.player.body.gravity.y = 600;
         
@@ -49,7 +49,7 @@ var mainState = {
         '              o     xxxxxxx                         xxxxx            ',
         '    o  o  o                                                          ',
         '                                                                     ',
-        ' xxxxxxxxx!!xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
+        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
         '                                                                     ',   
         '                                               xxxxx                 ',   
         '                                                                     ',  
@@ -101,7 +101,7 @@ var mainState = {
     this.physics.arcade.collide(this.walls, this.player);
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
     this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
-    this.physics.arcade.overlap(this.player,this.meteor, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball, this.restart, null, this);
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
