@@ -2,8 +2,6 @@ var mainState = {
 
     
     create: function() {
-        this.score = 0;
-        var text = this.game.add.text(10,10,"Score:"+ this.score);
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
@@ -103,7 +101,9 @@ var mainState = {
                 }
             }
         }
-
+    this.score = 0;
+    this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '20px', fill:'#000'});
+    this.text.addColor("#ff0000",0);
 
     }, 
     update: function(){
@@ -137,7 +137,8 @@ var mainState = {
     },
 takeFood: function(player,food){
         food.kill();
-    this.score += 10;
+    this.score += 100;
+    this.text.text = (10,10,"Score:"+ this.score);
         
 },
     
