@@ -172,10 +172,6 @@ var mainState = {
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
     this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball, this.restart, null, this);
-<<<<<<< HEAD
-//        check if time reaches 0 -> end the game
-    
-=======
     this.physics.arcade.overlap(this.player,this.fireball2, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball3, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball4, this.restart, null, this);
@@ -205,7 +201,10 @@ var mainState = {
     this.physics.arcade.overlap(this.player,this.fireball28, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball29, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball30, this.restart, null, this);
->>>>>>> dffe5ba1c50d1573e8e1a6846be27a5c66566397
+        
+        //        check if time reaches 0 -> end the game
+        
+
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
             this.player.scale.setTo(-1,1);   
