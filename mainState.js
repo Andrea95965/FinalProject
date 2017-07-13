@@ -2,6 +2,8 @@ var mainState = {
 
     
     create: function() {
+        this.score = 0;
+        var text = this.game.add.text(10,10,"Score:"+ this.score);
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
@@ -18,6 +20,7 @@ var mainState = {
         this.fireball3 = this.game.add.sprite(600,0,'fireball');
         this.fireball4 = this.game.add.sprite (800,0,'fireball');
         this.fireball5 = this.game.add.sprite (1000,0,'fireball');
+
         this.fireball6 = this.game.add.sprite (1200,0,'fireball');
         this.fireball7=this.game.add.sprite (1300,0,'fireball');
         this.fireball8 = this.game.add.sprite (200,0,'fireball');
@@ -28,6 +31,7 @@ var mainState = {
         this.fireball13= this.game.add.sprite (1100,0,'fireball');
         this.fireball14= this.game.add.sprite (1000,0,'fireball');
         this.fireball15= this.game.add.sprite (1400,0,'fireball');
+
         this.player.body.gravity.y = 600;
         
         this.fireball.body.gravity.y = 400;
@@ -71,33 +75,36 @@ var mainState = {
         this.lavas = this.game.add.group();
         
         var level = [
-        '                                                                     ',
-        '                                   o  o               o              ',
-        '                     o   o         xxxxx                             ',
-        '              o     xxxxxxx                          xxxxx           ',
-        '    o  o  o                                                          ',
-        '                                                                     ',
-        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                      ',   
-        '                                                                     ',   
-        '                                                           xxxxx     ',   
-        '                                                                     ',  
-        '                                                                     ',         
-        '                                                                     ',
-        '                                                                     ',
-        '                                                     xxxxx           ',
-        '                                                                     ',
-        'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                    ',
-        '                                                                     ',   
-        '                                                                     ',
-        '         o                                                  o        ',
-        '       xxxxxx                                             xxxxxx     ',   
-        '                       o               o                             ',   
-        '                      xxxxx         o xxxx                           ',   
-        '        o               o       o xxxxxxxxxxx                        ',   
-        '                             o xxxxxxxxxxxxxxxxx                     ',   
-        ' o            o             xxxxxxxxxxxxxxxxxxxxxxx                  ',    
+        '!                                                                   !',
+        '!                                  o  o               o             !',
+        '!                    o   o         xxxxx                            !',
+        '!             o     xxxxxxx                          xxxxx          !',
+        '!   o  o  o                                                         !',
+        '!                                                                   !',
+        '!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                     !',   
+        '!                                                                   !',   
+        '!                                                          xxxxx    !',   
+        '!                                                                   !',  
+        '!                                                                   !',         
+        '!                                                                   !',
+        '!                                                                   !',
+        '!                                xxx                 xxxxx          !',
+        '!                                                                   !',
+        '!xxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                   !',
+        '!                                                                   !',   
+        '!                                                                   !',
+        '!        o                                                  o       !',
+        '!      xxxxxx                                             xxxxxx    !',   
+        '!                x     o               o                            !',   
+        '!                     xxxxx         o xxxx                          !',   
+        '!       o               o       o xxxxxxxxxxx                       !',   
+        '!                            o xxxxxxxxxxxxxxxxx                    !',   
+        '!             o             xxxxxxxxxxxxxxxxxxxxxxx                 !',    
         'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!!!!!!!!!!xxx',
-    ];
+        
+        
+        
+        ];
         for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
 
@@ -144,8 +151,8 @@ var mainState = {
           
       } 
   
-        if(this.cursor.up.isDown){
-           this.player.body.velocity.y =  -100;
+        if(this.cursor.up.isDown && this.player.body.touching.down){
+           this.player.body.velocity.y =  -275;
             
         }
         
@@ -156,6 +163,7 @@ var mainState = {
     },
 takeFood: function(player,food){
         food.kill();
+    this.score += 10;
         
 },
     
