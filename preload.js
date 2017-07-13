@@ -8,7 +8,7 @@ var preload ={
         
         this.game.load.image('fatDino','newDino2.png');
         this.game.load.image('food','cake.png');
-        this.game.load.image('gameover','gameover4.png');
+        this.game.load.image('gameover','gameover5.png');
         this.game.load.image('start','startbutton2.png');
         this.game.load.image('wall','betterRock.png');
         this.game.load.image('gameTitle','gameTitle.png');
