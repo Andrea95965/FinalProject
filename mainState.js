@@ -15,7 +15,7 @@ var mainState = {
         
         this.fireball = this.game.add.sprite(200, 0, 'fireball');
         this.fireball2 = this.game.add.sprite(400,0,'fireball');
-        this.fireball3 = this.game.add.sprite(600,0,'fireball');
+        this.fireball3 = this.game.add.sprite(150,0,'fireball');
         this.fireball4 = this.game.add.sprite (800,0,'fireball');
         this.fireball5 = this.game.add.sprite (1000,0,'fireball');
 
@@ -29,7 +29,7 @@ var mainState = {
         this.fireball13= this.game.add.sprite (1100,0,'fireball');
         this.fireball14= this.game.add.sprite (1000,0,'fireball');
         this.fireball15= this.game.add.sprite (1400,0,'fireball');
-        this.fireball16= this.game.add.sprite (200,0,'fireball');
+        this.fireball16= this.game.add.sprite (5000,0,'fireball');
         this.fireball17= this.game.add.sprite (500,0,'fireball');
         this.fireball18= this.game.add.sprite (800,0,'fireball');
         this.fireball19= this.game.add.sprite (1000,0,'fireball');
@@ -37,31 +37,31 @@ var mainState = {
         this.fireball21= this.game.add.sprite (5090,0,'fireball');
         this.fireball22= this.game.add.sprite (4087,0,'fireball');
         this.fireball23= this.game.add.sprite (1043,0,'fireball');
-        this.fireball24= this.game.add.sprite (237,0,'fireball');
+        this.fireball24= this.game.add.sprite (800,0,'fireball');
         this.fireball25= this.game.add.sprite (764,0,'fireball');
         this.fireball26= this.game.add.sprite (900,0,'fireball');
         this.fireball27= this.game.add.sprite (230,0,'fireball');
-        this.fireball28= this.game.add.sprite (50,0,'fireball');
+        this.fireball28= this.game.add.sprite (5089,0,'fireball');
         this.fireball29= this.game.add.sprite (480,0,'fireball');
         this.fireball30= this.game.add.sprite (400,0,'fireball');
       
 
         this.player.body.gravity.y = 600;
         
-        this.fireball.body.gravity.y = 100;
-        this.fireball2.body.gravity.y= 68;
-        this.fireball3.body.gravity.y= 100;
-        this.fireball4.body.gravity.y= 300;
-        this.fireball5.body.gravity.y= 150;
+        this.fireball.body.gravity.y = 10;
+        this.fireball2.body.gravity.y= 80;
+        this.fireball3.body.gravity.y= 70;
+        this.fireball4.body.gravity.y= 30;
+        this.fireball5.body.gravity.y= 15;
         this.fireball6.body.gravity.y= 25;
-        this.fireball7.body.gravity.y= 15;
+        this.fireball7.body.gravity.y= 1;
         this.fireball8.body.gravity.y=16;
         this.fireball9.body.gravity.y=10;
         this.fireball10.body.gravity.y=10;
         this.fireball11.body.gravity.y=20;
         this.fireball12.body.gravity.y=15;
         this.fireball13.body.gravity.y=13;
-        this.fireball14.body.gravity.y=100;
+        this.fireball14.body.gravity.y=10;
         this.fireball15.body.gravity.y=70;
         this.fireball16.body.gravity.y=12;
         this.fireball17.body.gravity.y=34;
@@ -73,10 +73,10 @@ var mainState = {
         this.fireball23.body.gravity.y=12;
         this.fireball24.body.gravity.y=10;
         this.fireball25.body.gravity.y=8;
-        this.fireball26.body.gravity.y=45;
-        this.fireball27.body.gravity.y=50;
+        this.fireball26.body.gravity.y=4;
+        this.fireball27.body.gravity.y=5;
         this.fireball28.body.gravity.y=23;
-        this.fireball29.body.gravity.y=33;
+        this.fireball29.body.gravity.y=3;
         this.fireball30.body.gravity.y=20;
 
         
