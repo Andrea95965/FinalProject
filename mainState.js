@@ -130,6 +130,11 @@ var mainState = {
     this.score = 0;
     this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '20px', fill:'#000'});
     this.text.addColor("#000000",0);
+        this.total = 35;
+    this.timer = this.game.time.create(false);
+            this.timerText = this.game.add.text(1320,10,"Time:"+ this.total,{ fontSize: '20px', fill:'#000'});
+    this.timer.loop(1000, this.updateCounter, this);
+    this.timer.start();
 
     }, 
     update: function(){
@@ -137,6 +142,7 @@ var mainState = {
     this.physics.arcade.collide(this.player, this.foods, this.takeFood, null,this);
     this.physics.arcade.overlap(this.player, this.lavas, this.restart, null, this);
     this.physics.arcade.overlap(this.player,this.fireball, this.restart, null, this);
+//        check if time reaches 0 -> end the game
     
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
@@ -161,6 +167,12 @@ var mainState = {
         
         
     },
+updateCounter: function() {
+
+    this.total--;
+        this.timerText.text = (10,10,"Time:"+ this.total);
+
+},
 takeFood: function(player,food){
         food.kill();
     this.score += 100;
