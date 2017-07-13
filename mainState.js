@@ -49,7 +49,7 @@ var mainState = {
         '              o     xxxxxxx     x                   xxxxx            ',
         '    o  o  o                                                          ',
         '                                                                     ',
-        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
+        ' xxxxxxxxx!!xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
         '                                                                     ',   
         '                                                                     ',   
         '                                                                     ',  
@@ -116,7 +116,7 @@ var mainState = {
           
       } 
   
-        if(this.cursor.up.isDown && this.player.body.touching.down){
+        if(this.cursor.up.isDown){
            this.player.body.velocity.y =  -300;
             
         }
