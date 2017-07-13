@@ -117,7 +117,7 @@ var mainState = {
       } 
   
         if(this.cursor.up.isDown){
-           this.player.body.velocity.y =  -300;
+           this.player.body.velocity.y =  -100;
             
         }
         
