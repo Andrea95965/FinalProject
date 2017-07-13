@@ -49,7 +49,7 @@ var mainState = {
         '              o     xxxxxxx     x                   xxxxx            ',
         '    o  o  o                                                          ',
         '                                                                     ',
-        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
+        ' xxxxxxxxx!!xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
         '                                                                     ',   
         '                                                                     ',   
         '                                                                     ',  
