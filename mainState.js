@@ -5,7 +5,7 @@ var mainState = {
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
-        this.game.stage.backgroundColor ='#87CEEB';   
+        this.game.stage.backgroundColor ='#6F1409';   
         
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
     
@@ -13,7 +13,7 @@ var mainState = {
         
         this.player = this.game.add.sprite (150, 100, 'fatDino');
         
-        this.meteor = this.game.add.sprite(400, 100, 'meteor');
+        this.meteor = this.game.add.sprite(100, 100, 'meteor');
     
         this.player.body.gravity.y = 600;
         
@@ -45,23 +45,23 @@ var mainState = {
         var level = [
         '                                                                     ',
         '                                   o  o               o              ',
-        '                     o   o      o xxxxx                              ',
-        '              o     xxxxxxx     x                   xxxxx            ',
+        '                     o   o        xxxxx                              ',
+        '              o     xxxxxxx                         xxxxx            ',
         '    o  o  o                                                          ',
         '                                                                     ',
         ' xxxxxxxxx!!xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
         '                                                                     ',   
-        '                                                                     ',   
+        '                                               xxxxx                 ',   
         '                                                                     ',  
-        'xxxxxxxxx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   o  !!!!!!!!!                ',         
-        '                    o              o                                 ',
-        '                  o   o        xxxxxxxxx     o                       ',
-        '                o       o                                            ',
-        '              o           o                                          ',
+        '                                                            xxxxx    ',         
+        '                                                                     ',
+        '                                                                     ',
+        '                                                     xxxxx           ',
+        '                                                                     ',
         'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                    ',
         '                                                                     ',   
         '                                                                     ',
-        '     xxxxxx   o                                        ',
+        '     xxxxxx   o                                                      ',
         '              !!!!!!       xxx                                       ',   
         '              !!!!!!   o               o                             ',   
         '                     xxxxx          o xxxx                           ',   
