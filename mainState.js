@@ -45,15 +45,15 @@ var mainState = {
         var level = [
         '                                                                     ',
         '                                   o  o               o              ',
-        '                     o   o        xxxxx                              ',
-        '              o     xxxxxxx                         xxxxx            ',
+        '                     o   o         xxxxx                             ',
+        '              o     xxxxxxx                          xxxxx           ',
         '    o  o  o                                                          ',
         '                                                                     ',
-        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxx                        ',   
+        ' xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                      ',   
         '                                                                     ',   
-        '                                               xxxxx                 ',   
+        '                                                           xxxxx     ',   
         '                                                                     ',  
-        '                                                            xxxxx    ',         
+        '                                                                     ',         
         '                                                                     ',
         '                                                                     ',
         '                                                     xxxxx           ',
@@ -61,14 +61,14 @@ var mainState = {
         'xxxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                    ',
         '                                                                     ',   
         '                                                                     ',
-        '     xxxxxx   o                                                      ',
-        '              !!!!!!       xxx                                       ',   
-        '              !!!!!!   o               o                             ',   
-        '                     xxxxx          o xxxx                           ',   
+        '         o                                                  o        ',
+        '       xxxxxx                                             xxxxxx     ',   
+        '                       o               o                             ',   
+        '                      xxxxx         o xxxx                           ',   
         '        o               o       o xxxxxxxxxxx                        ',   
-        '                     xxxxx   o xxxxxxxxxxxxxxxxx                     ',   
+        '                             o xxxxxxxxxxxxxxxxx                     ',   
         ' o            o             xxxxxxxxxxxxxxxxxxxxxxx                  ',    
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!!!!!!!!!!xxx',
     ];
         for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
@@ -117,7 +117,7 @@ var mainState = {
       } 
   
         if(this.cursor.up.isDown){
-           this.player.body.velocity.y =  -300;
+           this.player.body.velocity.y =  -100;
             
         }
         
