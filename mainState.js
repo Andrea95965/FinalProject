@@ -54,7 +54,6 @@ var mainState = {
         this.fireball28= this.game.add.sprite (5089,0,'fireball');
         this.fireball29= this.game.add.sprite (867,0,'fireball');
         this.fireball30= this.game.add.sprite (4000,0,'fireball');
-
         this.fireball28= this.game.add.sprite (50,0,'fireball');
         this.fireball29= this.game.add.sprite (480,0,'fireball');
         this.fireball30= this.game.add.sprite (400,0,'fireball');
@@ -126,10 +125,10 @@ var mainState = {
         
         var level = [
         '!                                                                   !',
-        '!                                  o  o               o             !',
+        '!                                    o                  o           !',
         '!                    o   o         xxxxx                            !',
         '!             o     xxxxxxx                          xxxxx          !',
-        '!   o  o  o                                                         !',
+        '!      o                                                            !',
         '!                                                                   !',
         '!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                     !',   
         '!                                                                   !',   
@@ -137,9 +136,9 @@ var mainState = {
         '!                                                                   !',  
         '!                                                                   !',         
         '!                                                                   !',
-        '!                                                                   !',
+        '!                                 o                                 !',
         '!                                xxx                 xxxxx          !',
-        '!                                                                   !',
+        '!  o                                                                !',
         '!xxxxx      xxxxxxxxxxxxxxxxx!!!!!!!!!!!!xxxxxxxx                   !',
         '!                                                                   !',   
         '!                                                                   !',
