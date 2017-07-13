@@ -17,7 +17,10 @@ var mainState = {
         this.fireball2 = this.game.add.sprite(400,0,'fireball');
         this.fireball3 = this.game.add.sprite(600,0,'fireball');
         this.fireball4 = this.game.add.sprite (800,0,'fireball');
-        this.fireball5 this.game.add.sprite (1000,0,'fireball');
+        this.fireball5 = this.game.add.sprite (1000,0,'fireball');
+        this.fireball6 = this.game.add.sprite (1200,0,'fireball');
+        this.fireball7=this.game.add.sprite (1300,0,'fireball');
+        this.fireball8 = this.game.add.sprite (200,0,'fireball');
     
         this.player.body.gravity.y = 600;
         
@@ -25,6 +28,10 @@ var mainState = {
         this.fireball2.body.gravity.y= 300;
         this.fireball3.body.gravity.y= 200;
         this.fireball4.body.gravity.y= 100;
+        this.fireball5.body.gravity.y= 50;
+        this.fireball6.body.gravity.y= 25;
+        this.fireball7.body.gravity.y= 15;
+        this.fireball8.body.gravity.y=10
 
         
          var delay = 0;
