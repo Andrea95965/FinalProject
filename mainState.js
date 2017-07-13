@@ -17,7 +17,7 @@ var mainState = {
         this.fireball2 = this.game.add.sprite(400,0,'fireball');
         this.fireball3 = this.game.add.sprite(600,0,'fireball');
         this.fireball4 = this.game.add.sprite (800,0,'fireball');
-        this.fireball5 this.game.add.sprite (1000,0,'fireball');
+        this.fireball5 = this.game.add.sprite (1000,0,'fireball');
     
         this.player.body.gravity.y = 600;
         
