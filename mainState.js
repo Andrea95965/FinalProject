@@ -21,17 +21,31 @@ var mainState = {
         this.fireball6 = this.game.add.sprite (1200,0,'fireball');
         this.fireball7=this.game.add.sprite (1300,0,'fireball');
         this.fireball8 = this.game.add.sprite (200,0,'fireball');
-    
+        this.fireball9 = this.game.add.sprite (300,0,'fireball');
+        this.fireball10= this.game.add.sprite (500,0,'fireball');
+        this.fireball11= this.game.add.sprite (700,0,'fireball');
+        this.fireball12= this.game.add.sprite (900,0,'fireball');
+        this.fireball13= this.game.add.sprite (1100,0,'fireball');
+        this.fireball14= this.game.add.sprite (1000,0,'fireball');
+        this.fireball15= this.game.add.sprite (1400,0,'fireball');
         this.player.body.gravity.y = 600;
         
         this.fireball.body.gravity.y = 400;
-        this.fireball2.body.gravity.y= 300;
+        this.fireball2.body.gravity.y= 500;
         this.fireball3.body.gravity.y= 200;
-        this.fireball4.body.gravity.y= 100;
-        this.fireball5.body.gravity.y= 50;
+        this.fireball4.body.gravity.y= 300;
+        this.fireball5.body.gravity.y= 100;
         this.fireball6.body.gravity.y= 25;
         this.fireball7.body.gravity.y= 15;
-        this.fireball8.body.gravity.y=10
+        this.fireball8.body.gravity.y=16;
+        this.fireball9.body.gravity.y=10;
+        this.fireball10.body.gravity.y=10;
+        this.fireball11.body.gravity.y=20;
+        this.fireball12.body.gravity.y=15;
+        this.fireball13.body.gravity.y=13;
+        this.fireball14.body.gravity.y=100;
+        this.fireball15.body.gravity.y=70;
+        
 
         
          var delay = 0;
