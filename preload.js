@@ -13,7 +13,7 @@ var preload ={
         this.game.load.image('wall','betterRock.png');
         this.game.load.image('gameTitle','gameTitle.png');
         this.game.load.image('meteor','meteor.png');
-        this.game.load.image('lava','lava.png');
+        this.game.load.image('lava','lava.png'); 
         this.game.load.image('fireball','coolFireball.png')
         console.log("loaded all assets");
     },
