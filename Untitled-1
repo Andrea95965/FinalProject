@@ -1,0 +1,102 @@
+this.fireball = this.game.add.sprite(707, 0, 'fireball');
+
+ 
+        this.fireball = this.game.add.sprite(897, 0, 'fireball');
+       
+        this.fireball2 = this.game.add.sprite(4090,0,'fireball');
+        this.fireball3 = this.game.add.sprite(200,0,'fireball');
+        this.fireball4 = this.game.add.sprite (800,0,'fireball');
+        this.fireball5 = this.game.add.sprite (1000,0,'fireball');
+        this.fireball6 = this.game.add.sprite (1200,0,'fireball');
+        this.fireball7 =  this.game.add.sprite(1300,0,'fireball');
+        this.fireball8 = this.game.add.sprite (600,0,'fireball');
+        this.fireball9 = this.game.add.sprite (650,0,'fireball');
+        this.fireball10= this.game.add.sprite (980,0,'fireball');
+        this.fireball11= this.game.add.sprite (800,0,'fireball');
+        this.fireball12= this.game.add.sprite (900,0,'fireball');
+        this.fireball13= this.game.add.sprite (1100,0,'fireball');
+        this.fireball14= this.game.add.sprite (700,0,'fireball');
+        this.fireball15= this.game.add.sprite (790,0,'fireball');
+        this.fireball16= this.game.add.sprite (5000,0,'fireball');
+        this.fireball17= this.game.add.sprite (500,0,'fireball');
+        this.fireball18= this.game.add.sprite (800,0,'fireball');
+        this.fireball19= this.game.add.sprite (100,0,'fireball');
+        this.fireball20= this.game.add.sprite (140,0,'fireball');
+        this.fireball21= this.game.add.sprite (700,0,'fireball');
+        this.fireball22= this.game.add.sprite (500,0,'fireball');
+        this.fireball23= this.game.add.sprite (806,0,'fireball');
+        this.fireball24= this.game.add.sprite (1000,0,'fireball');
+        this.fireball25= this.game.add.sprite (980,0,'fireball');
+        this.fireball26= this.game.add.sprite (600,0,'fireball');
+        this.fireball27= this.game.add.sprite (4080,0,'fireball');
+        this.fireball28= this.game.add.sprite (1043,0,'fireball');
+        this.fireball29= this.game.add.sprite (543,0,'fireball');
+        this.fireball30= this.game.add.sprite (2370,0,'fireball');
+        
+        this.fireball.body.gravity.y = 10;
+        this.fireball2.body.gravity.y= 9;
+        this.fireball3.body.gravity.y= 700;
+        this.fireball4.body.gravity.y= 6;
+        this.fireball5.body.gravity.y= 150;
+        this.fireball6.body.gravity.y= 80;
+        this.fireball7.body.gravity.y= 18;
+        this.fireball8.body.gravity.y= 37;
+        this.fireball9.body.gravity.y= 9;
+        this.fireball10.body.gravity.y=11;
+        this.fireball11.body.gravity.y=20;
+        this.fireball12.body.gravity.y=1;
+        this.fireball13.body.gravity.y=100;
+        this.fireball14.body.gravity.y=19;
+        this.fireball15.body.gravity.y= 15;
+        this.fireball16.body.gravity.y=23;
+        this.fireball17.body.gravity.y=49;
+        this.fireball18.body.gravity.y=19;
+        this.fireball19.body.gravity.y=1;
+        this.fireball20.body.gravity.y=27;
+        this.fireball21.body.gravity.y=19;
+        this.fireball22.body.gravity.y=80;
+        this.fireball23.body.gravity.y=70;
+        this.fireball24.body.gravity.y=12;
+        this.fireball25.body.gravity.y=17;
+        this.fireball26.body.gravity.y=11;
+        this.fireball27.body.gravity.y=12;
+        this.fireball28.body.gravity.y=20;
+        this.fireball29.body.gravity.y=11;
+        this.fireball30.body.gravity.y=12;
+        
+        
+         this.physics.arcade.overlap(this.player,this.fireball, this.restart, null, this);
+
+//        check if time reaches 0 -> end the game
+
+    this.physics.arcade.overlap(this.player,this.fireball2, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball3, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball4, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball5, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball6, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball7, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball8, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball9, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball10, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball11, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball12, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball13, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball14, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball15, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball16, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball17, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball18, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball19, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball20, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball21, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball22, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball23, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball24, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball25, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball26,this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball27, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball28, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball29, this.restart, null, this);
+    this.physics.arcade.overlap(this.player,this.fireball30, this.restart, null, this);
+        
+        
