@@ -13,7 +13,7 @@ var mainState = {
         
         this.player = this.game.add.sprite (150, 100, 'fatDino');
         
-        this.fireball = this.game.add.sprite(200, 0, 'fireball');
+        this.fireball = this.game.add.sprite(707, 0, 'fireball');
         this.fireball2 = this.game.add.sprite(400,0,'fireball');
         this.fireball3 = this.game.add.sprite(600,0,'fireball');
         this.fireball4 = this.game.add.sprite (800,0,'fireball');
@@ -29,7 +29,7 @@ var mainState = {
         this.fireball13= this.game.add.sprite (1100,0,'fireball');
         this.fireball14= this.game.add.sprite (1000,0,'fireball');
         this.fireball15= this.game.add.sprite (1400,0,'fireball');
-        this.fireball16= this.game.add.sprite (200,0,'fireball');
+        this.fireball16= this.game.add.sprite (289,0,'fireball');
         this.fireball17= this.game.add.sprite (500,0,'fireball');
         this.fireball18= this.game.add.sprite (800,0,'fireball');
         this.fireball19= this.game.add.sprite (1000,0,'fireball');
