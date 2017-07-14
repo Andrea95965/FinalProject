@@ -52,7 +52,7 @@ var mainState = {
         
         this.fireball.body.gravity.y = 10;
         this.fireball2.body.gravity.y= 100;
-        this.fireball3.body.gravity.y= 300;
+        this.fireball3.body.gravity.y= 100;
         this.fireball4.body.gravity.y= 100;
         this.fireball5.body.gravity.y= 50;
         this.fireball6.body.gravity.y= 80;
@@ -167,12 +167,12 @@ var mainState = {
             }
         }
     this.score = 0;
-    this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '20px', fill:'#000'});
+    this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '50px', fill:'#000'});
     this.text.addColor("#000000",0);
         
-        this.total = 40;
+        this.total = 35;
     this.timer = this.game.time.create(false);
-            this.timerText = this.game.add.text(1320,10,"Time:"+ this.total,{ fontSize: '20px', fill:'#000'});
+            this.timerText = this.game.add.text(1220,10,"Time:"+ this.total,{ fontSize: '50px',  fill:'#000'});
     this.timer.loop(1000, this.updateCounter, this);
     this.timer.start();
 
@@ -187,7 +187,7 @@ var mainState = {
             this.game.state.start('gameOver');
         }
         
-        if(this.total==0&&this.score==2000){
+        if(this.score==2000){
             this.game.state.start('dinoMite')
         }
 
