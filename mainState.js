@@ -232,7 +232,13 @@ var mainState = {
     this.physics.arcade.overlap(this.player,this.fireball30, this.restart, null, this);
         
         //        check if time reaches 0 -> end the game
-    
+        if(this.total==0&&this.score<2000){
+            this.game.state.start('gameOver');
+        }
+        
+        if(this.total==0&&this.score==2000){
+            this.game.state.start('dinoMite')
+        }
 
         if(this.cursor.left.isDown){
            this.player.body.velocity.x = -200;
