@@ -19,9 +19,6 @@ var mainState = {
         this.player.body.gravity.y = 600;
         
         this.fireball = this.game.add.sprite(707, 0, 'fireball');
-
- 
-        this.fireball = this.game.add.sprite(897, 0, 'fireball');
        
         this.fireball2 = this.game.add.sprite(4090,0,'fireball');
         this.fireball3 = this.game.add.sprite(200,0,'fireball');
@@ -57,7 +54,7 @@ var mainState = {
         this.fireball2.body.gravity.y= 100;
         this.fireball3.body.gravity.y= 300;
         this.fireball4.body.gravity.y= 100;
-        this.fireball5.body.gravity.y= 150;
+        this.fireball5.body.gravity.y= 50;
         this.fireball6.body.gravity.y= 80;
         this.fireball7.body.gravity.y= 18;
         this.fireball8.body.gravity.y= 37;
@@ -71,7 +68,7 @@ var mainState = {
         this.fireball16.body.gravity.y=23;
         this.fireball17.body.gravity.y=49;
         this.fireball18.body.gravity.y=19;
-        this.fireball19.body.gravity.y=200;
+        this.fireball19.body.gravity.y=100;
         this.fireball20.body.gravity.y=27;
         this.fireball21.body.gravity.y=19;
         this.fireball22.body.gravity.y=80;
@@ -115,12 +112,12 @@ var mainState = {
         this.lavas = this.game.add.group();
         
         var level = [
-        '!                                                                   !',
-        '!                                    o                  o           !',
-        '!                    o   o         xxxxx                            !',
-        '!             o     xxxxxxx                          xxxxx          !',
-        '!                                                                   !',
-        '!                                                                   !',
+        '                                                                    !',
+        '                                     o                  o           !',
+        '                     o   o         xxxxx                            !',
+        '              o     xxxxxxx                          xxxxx          !',
+        '                                                                    !',
+        '                                                                    !',
         '!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                     !',   
         '!                                                            o      !',   
         '!                                                          xxxxx    !',   
