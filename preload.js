@@ -14,13 +14,13 @@ var preload ={
         this.game.load.image('gameTitle','gameTitle.png');
         this.game.load.image('meteor','meteor.png');
         this.game.load.image('lava','lava.png'); 
-        this.game.load.image('fireball','coolFireball.png')
-<<<<<<< HEAD
-       this.game.load.image('replay','replay.png')
-=======
-       this.game.load.image('replay','New Piskel(2).png')
-        this.game.load.image('dinoMite','dinomite.png')
->>>>>>> 45adc290b1afaeb41578e7f145d7a47a4e8e5ce9
+        this.game.load.image('fireball','coolFireball.png');
+        
+       this.game.load.image('replay','replay.png');
+
+       
+        this.game.load.image('dinoMite','dinomite.png');
+
         console.log("loaded all assets");
     },
     
