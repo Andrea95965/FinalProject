@@ -112,12 +112,12 @@ var mainState = {
         this.lavas = this.game.add.group();
         
         var level = [
-        '                                                                    !',
-        '                                     o                  o           !',
-        '                     o   o         xxxxx                            !',
-        '              o     xxxxxxx                          xxxxx          !',
-        '                                                                    !',
-        '                                                                    !',
+        '!                                                                   !',
+        '!                                    o                              !',
+        '!                    o   o         xxxxx               o            !',
+        '!             o     xxxxxxx                          xxxxx          !',
+        '!                                                                   !',
+        '!                                                                   !',
         '!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    xxxxx                     !',   
         '!                                                            o      !',   
         '!                                                          xxxxx    !',   
