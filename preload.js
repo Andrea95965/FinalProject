@@ -15,8 +15,9 @@ var preload ={
         this.game.load.image('meteor','meteor.png');
         this.game.load.image('lava','lava.png'); 
         this.game.load.image('fireball','coolFireball.png');
-        
-       this.game.load.image('replay','replay.png');
+        this.game.load.image('replay','replay.png');
+        this.game.load.image('howToButton', 'howToPlay.png')
+        this.game.load.image('instructions','betterInstructions.png')
 
        
         this.game.load.image('dinoMite','dinomite.png');
