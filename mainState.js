@@ -19,9 +19,6 @@ var mainState = {
         this.player.body.gravity.y = 600;
         
         this.fireball = this.game.add.sprite(707, 0, 'fireball');
-
- 
-        this.fireball = this.game.add.sprite(897, 0, 'fireball');
        
         this.fireball2 = this.game.add.sprite(4090,0,'fireball');
         this.fireball3 = this.game.add.sprite(200,0,'fireball');
@@ -54,24 +51,24 @@ var mainState = {
         this.fireball30= this.game.add.sprite (2370,0,'fireball');
         
         this.fireball.body.gravity.y = 10;
-        this.fireball2.body.gravity.y= 9;
-        this.fireball3.body.gravity.y= 700;
-        this.fireball4.body.gravity.y= 6;
-        this.fireball5.body.gravity.y= 150;
+        this.fireball2.body.gravity.y= 100;
+        this.fireball3.body.gravity.y= 30;
+        this.fireball4.body.gravity.y= 100;
+        this.fireball5.body.gravity.y= 50;
         this.fireball6.body.gravity.y= 80;
         this.fireball7.body.gravity.y= 18;
         this.fireball8.body.gravity.y= 37;
-        this.fireball9.body.gravity.y= 9;
+        this.fireball9.body.gravity.y= 100;
         this.fireball10.body.gravity.y=11;
         this.fireball11.body.gravity.y=20;
-        this.fireball12.body.gravity.y=1;
+        this.fireball12.body.gravity.y=100;
         this.fireball13.body.gravity.y=100;
         this.fireball14.body.gravity.y=19;
         this.fireball15.body.gravity.y= 15;
         this.fireball16.body.gravity.y=23;
         this.fireball17.body.gravity.y=49;
         this.fireball18.body.gravity.y=19;
-        this.fireball19.body.gravity.y=1;
+        this.fireball19.body.gravity.y=100;
         this.fireball20.body.gravity.y=27;
         this.fireball21.body.gravity.y=19;
         this.fireball22.body.gravity.y=80;
@@ -116,8 +113,8 @@ var mainState = {
         
         var level = [
         '!                                                                   !',
-        '!                                    o                  o           !',
-        '!                    o   o         xxxxx                            !',
+        '!                                    o                              !',
+        '!                    o   o         xxxxx               o            !',
         '!             o     xxxxxxx                          xxxxx          !',
         '!                                                                   !',
         '!                                                                   !',
@@ -170,12 +167,12 @@ var mainState = {
             }
         }
     this.score = 0;
-    this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '20px', fill:'#000'});
+    this.text = this.game.add.text(10,10,"Score:"+ this.score,{ fontSize: '50px', fill:'#000'});
     this.text.addColor("#000000",0);
         
-        this.total = 40;
+        this.total = 35;
     this.timer = this.game.time.create(false);
-            this.timerText = this.game.add.text(1320,10,"Time:"+ this.total,{ fontSize: '20px', fill:'#000'});
+            this.timerText = this.game.add.text(1220,10,"Time:"+ this.total,{ fontSize: '50px',  fill:'#000'});
     this.timer.loop(1000, this.updateCounter, this);
     this.timer.start();
 
@@ -190,7 +187,7 @@ var mainState = {
             this.game.state.start('gameOver');
         }
         
-        if(this.total==0&&this.score==2000){
+        if(this.score==2000){
             this.game.state.start('dinoMite')
         }
 
