@@ -52,7 +52,7 @@ var mainState = {
         
         this.fireball.body.gravity.y = 10;
         this.fireball2.body.gravity.y= 100;
-        this.fireball3.body.gravity.y= 100;
+        this.fireball3.body.gravity.y= 30;
         this.fireball4.body.gravity.y= 100;
         this.fireball5.body.gravity.y= 50;
         this.fireball6.body.gravity.y= 80;
